@@ -5,6 +5,14 @@ const SwapComp = () => {
         divOne: [1, 2 , 3, 4, 5],
         divTwo: []
       });
+    
+      const [ data1, setData1 ] = useState({
+        divOne: [1, 2 , 3, 4, 5]
+      });
+
+      const [ data2, setData2 ] = useState({
+        divTwo: []
+      });
 
 
     // const oneData = [1, 2, 3, 4, 5];
@@ -85,17 +93,25 @@ const SwapComp = () => {
            
 
             if (id === 'divOne') {
-                        setData({
-                          divOne: remianing,
-                          divTwo: [...data.divTwo, +num].sort()
-                        });
-                      }
-                      if (id === 'divTwo') {
-                        setData({
-                          divOne: [...data.divOne, +num].sort(),
-                          divTwo: remianing
-                        });
-                      }
+                setData({
+                    divOne: remianing,
+                    divTwo: [...data.divTwo, +num].sort()
+                });
+                }
+                if (id === 'divTwo') {
+                setData({
+                    divOne: [...data.divOne, +num].sort(),
+                    divTwo: remianing
+                });
+            }
+
+            setData1({
+                divOne: remianing
+            })
+
+            setData2({
+                divOne: remianing
+            })
 
         }
 
