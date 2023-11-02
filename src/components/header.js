@@ -15,6 +15,7 @@ const Header = () => {
               <Link to="/" className='px-3 py-1 text-white'>Home</Link>
               <Link to="/cart" className='px-3 py-1 text-white'>Food</Link>
               <Link to="/productcart" className='px-3 py-1 text-white'>All Products</Link>
+              <Link to="/swaip" className='px-3 py-1 text-white'>swaip</Link>
             </div>
             <div className='w-[30%] text-right '>
               <Link to="/cartdetail" className='p-1 text-white relative flex justify-end '>

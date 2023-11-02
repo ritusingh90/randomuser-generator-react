@@ -38,7 +38,7 @@ const CartDetails = () => {
         let totalprice = 0
         carts.map((ele) => {
             console.log("Price:",ele.price, "Qnty:", ele.qnty, "Total:", totalprice);
-            // totalprice = ele.price * ele.qnty + totalprice
+            totalprice = ele.price * ele.qnty + totalprice
         });
         setPrice(totalprice)
     }

@@ -9,6 +9,7 @@ import CartDetails from './components/CartDetails';
 import ProductDetail from './components/ProductDetail';
 import ProductCart from './Pages/ProductCart';
 import 'react-toastify/dist/ReactToastify.css';
+import Swaip from './Pages/Swaip';
 
 
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/cartdetail" element={<CartDetails/>}/>
         <Route path='/productdetail/:id' element={<ProductDetail/>} />
         <Route path="/productcart" element={<ProductCart/>}/>
+        <Route path="/swaip" element={<Swaip/>}/>
       </Routes>
      
     </div>
